@@ -1,0 +1,512 @@
+﻿
+@{
+    ViewData["Title"] = "Category2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="breadcumb_top_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="bread_top_box">
+                    <h2>Productos</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="breadcumb_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="bread_box">
+                    <ul class="breadcumb">
+                        <li><a href="/Home/Index">inicio <span>|</span></a></li>
+                        <li><a href="/Home/Category">Productos<span>|</span></a></li>
+                        <li><a href="">Categorías <span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<div class="filter_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-8 col-xs-12">
+                <div class="filter_box_left">
+                    <p>FILTERING:</p>
+                    <div class="filter_cont">
+                        <ul>
+                            <li><a href="/Home/Category1">on</a></li>
+                            <li><img src="~/sistema/images/filter_ico_off.png" alt="" /></li>
+                            <li><a href="/Home/Category2">off</a></li>
+                        </ul>
+                    </div>
+                    <div class="s_results">
+                        <p><span>|</span> showing 1-12 of 30 results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    -->
+<section class="main_category_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="main_category_right cat-2">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="main_cat_item">
+                                <div class="item">
+                                    <div class="item-img">
+                                        <img src="~/sistema/images/pechuga.jpg" alt="" />
+                                        <div class="tr-add-cart">
+                                            <ul>
+                                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item-new">
+                                        <!-- <p>Sale</p>-->
+                                    </div>
+                                    <div class="item-sub">
+                                        <!--<a href="/Home/ProductDetail"></a>--><h5>Pechuga</h5>
+                                        <p>₡ 2000<span><del></del></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="main_cat_item">
+                            <div class="item">
+                                <div class="item-img">
+                                    <img src="~/sistema/images/Muslo.jpg" alt="" />
+                                    <div class="tr-add-cart">
+                                        <ul>
+                                            <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                            <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                            <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                            <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item-new">
+                                    <p>New</p>
+                                    <!-- <span>-10%</span>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5>Muslo</a>
+                        <p>₡ 2000<span><del>₡ 2000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/Alas.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <!-- <p>Sale</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5>Alas</h5></a>
+                        <p>₡ 2000<span><del>₡ 2000</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item3.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 158.78</p>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item14.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 168.00<span><del>$ 212.00</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item5.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 181.00<span><del>$ 212.00</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item6.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                        <span>-10%</span>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 95.66</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item7.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5>Producto</h5></a>
+                        <p>$90.00</p>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item15.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                        <span>-20%</span>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 133.20<span><del>$ 148.00</del></span></p>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item8.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 124.22<span><del>$ 248.44</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item9.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                        <span>-50%</span>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 100.00</p>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item10.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>Sale</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 130.00<span><del>$ 150.00</del></span></p>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item16.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 181.00<span><del>$ 212.00</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item4.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>Sale</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 160.00<span><del>$ 200.00</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item11.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 168.00<span><del>$ 212.00</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="main_cat_item">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="~/sistema/images/t_item12.jpg" alt="" />
+                        <div class="tr-add-cart">
+                            <ul>
+                                <li><a class="fa fa-shopping-cart tr_cart" href="#"></a></li>
+                                <li><a class="tr_text" href="#">ADD TO CART</a></li>
+                                <li><a class="fa fa-heart tr_heart" href="#"></a></li>
+                                <li><a class="fa fa-search tr_search" href="/Home/ProductDetail"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-new">
+                        <p>New</p>
+                        <span>-20%</span>
+                    </div>
+                    <div class="item-sub">
+                        <a href="/Home/ProductDetail"><h5></h5></a>
+                        <p>$ 133.20<span><del>$ 148.00</del></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="pagi_line"></div>
+                                                <div class="pagi_ul">
+                                                    <ul id="pagination">
+                                                        <li><a href="">Previous</a></li>
+                                                        <li><a href="">1</a></li>
+                                                        <li><a href="">2</a></li>
+                                                        <li><a href="">3</a></li>
+                                                        <li><a href="">4</a></li>
+                                                        <li><a href="">5 ...</a></li>
+                                                        <li><a href="">Next</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- JS Files -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 150,
+            max: 1500,
+            values: [520, 1100],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+    });
+</script>
+<script src="~/sistema/js/owl.carousel.min.js"></script>
+<script src="~/sistema/js/lightbox.min.js"></script>
+<script src="~/sistema/js/jquery.elevatezoom.js"></script>
+<script src="~/sistema/js/bootstrap-select.min.js"></script>
+<script src="~/sistema/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script src="~/sistema/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="~/sistema/js/rs-plugin/rs.home.js"></script>
+<script src="~/sistema/js/bootstrap.min.js"></script>
+<!--Opacity & Other IE fix for older browser-->
+<!--[if lte IE 8]>
+    <script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
+<![endif]-->
+<script src="~/sistema/js/main.js"></script>
+

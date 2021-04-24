@@ -1,0 +1,185 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="breadcumb_top_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="bread_top_box">
+                    <h2>COTIZACIONES</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="breadcumb_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="bread_box">
+                    <ul class="breadcumb">
+                        <li><a href="/Home/Index">inicio <span>|</span></a></li>
+                        <li><a href="/Home/Category1">productos <span>|</span></a></li>
+                        <li><a href="/Home/Cart">Carrito <span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="checkout_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-8 col-xs-12">
+                <div class="checkout_left">
+                    <h2>Direccion de facturacion</h2>
+                    <div class="dotted_line"></div>
+
+                    <div class="checkout_form">
+                        <div class="country_select">
+                            <p>Provincia</p>
+                            <select class="selectpicker sel_state">
+                                <option>Provincia</option>
+                                <option>San Jose</option>
+                            </select>
+                        </div>
+                        <div class="c_name_box">
+                            <div class="c_name_box_left">
+                                <p>Nombre<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="c_name_box_right">
+                                <p>Apellidos<span>*</span></p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="c_address">
+                            <p>Producto<span>*</span></p>
+                            <input type="text" placeholder="Producto">
+                        </div>
+                        <div class="c_address">
+                            <p>Direccion de envio<span>*</span></p>
+                            <input type="text" placeholder="Dirección">
+                        </div>
+                        <div class="c_state_box">
+                            <div class="c_state_box_left">
+                                <p>Cantidad <span>*</span></p>
+                                <input type="text">
+                            </div>
+                        
+                        </div>
+                        <div class="c_mail_box">
+                            <div class="c_mail_box_left">
+                                <p>Correo <span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="c_mail_box_right">
+                                <p>Numero de telefono <span>*</span></p>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Express o en tienda</h2>
+                    <div class="envio_select">
+                        <p>seleccionar preferencia</p>
+                        <select class="selectpicker sel_state">
+                            <option>Seleccione una opcion porfavor</option>
+                            <option>Envio/servicio Express</option>
+                            <option>Paso a recoger</option>
+                        </select>
+                    </div>
+                    <div class="pago_select">
+                        <p>seleccionar Tipo de pago</p>
+                        <select class="selectpicker sel_state">
+                            <option>SINPE</option>
+                            <option>Efectivo</option>
+                            <option>Tarjeta(opcion en el local o al express)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!--
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="checkout_right">
+                            <h4>Review of Your Order</h4>
+
+                            <div class="product_form_total">
+                                <div class="c_main_item">
+                                    <p>Product</p>
+                                    <span>Total</span>
+                                </div>
+                                <div class="c_single_item">
+                                    <p>subtotal</p>
+                                    <span>$854.00</span>
+                                </div>
+                                <div class="c_single_item sp_single_item">
+                                    <p>Cargo de envio</p>
+                                    <span>Gratis</span>
+                                </div>
+                                <div class="c_total_item sp_single_item">
+                                    <p>Total a pagar</p>
+                                    <span>$854.00</span>
+                                </div>
+                                <div class="c_single_item">
+                                    <p>Paquete de alitas 30pcs x 1</p>
+                                    <span>1500</span>
+                                </div>
+                                <div class="c_single_item">
+                                    <p>Pechuga de pollo x 3 </p>
+                                    <span>4500</span>
+                                </div>
+                                <div class="c_single_item sp_single_item">
+                                    <p>Salchichon(embutido) 500g x 2</p>
+                                    <span>4500</span>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> I have Read & Accept <span>Terms & Conditions</span>
+                                    </label>
+                                </div>
+                                <input type="submit" value="Place order now"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+</section>
+
+<!-- JS Files -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 150,
+            max: 1500,
+            values: [520, 1100],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+    });
+</script>
+<script src="~/sistema/js/owl.carousel.min.js"></script>
+<script src="~/sistema/js/lightbox.min.js"></script>
+<script src="~/sistema/js/jquery.elevatezoom.js"></script>
+<script src="~/sistema/js/bootstrap-select.min.js"></script>
+<script src="~/sistema/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script src="~/sistema/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="~/sistema/js/rs-plugin/rs.home.js"></script>
+<script src="~/sistema/js/bootstrap.min.js"></script>
+<!--Opacity & Other IE fix for older browser-->
+<!--[if lte IE 8]>
+    <script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
+<![endif]-->
+<script src="~/sistema/js/main.js"></script>
+
+

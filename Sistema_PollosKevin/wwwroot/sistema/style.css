@@ -1618,7 +1618,7 @@ z-index: 4;
 /* ============================================
 4. Checkout page CSS
 ===============================================*/
-.breadcumb_top_area {
+/*.breadcumb_top_area {
 background: url("images/breadcumb_bg.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
 padding: 92px 0;
 position: relative;
@@ -1640,7 +1640,7 @@ z-index: -1;
   top: 0;
   width: 100%;
   z-index: -1;
-}
+}*/
 .breadcumb_area {
   padding: 20px 0;
 }
@@ -1908,12 +1908,13 @@ width: 277px;
 /* ============================================
 6. blog_page_style
 ===============================================*/
-.blog_slider_area {
+/*.blog_slider_area {
   background: url("images/blog_bg.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
   padding: 92px 0;
   position: relative;
   z-index: -1;
 }
+*/
 .blog_page_area {
   padding: 90px 0;
   background:#F7F8F9;
